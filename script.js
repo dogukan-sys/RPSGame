@@ -4,11 +4,12 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-  var choice = prompt('Choose: Rock, Paper or Scissor')
-  if 
+  var choice = prompt('Choose: Rock, Paper or Scissor')  
+  return choice[0].toUpperCase() + choice.slice(1)
 } 
 
 function checkWinner(choice1, choice2) {
+  
   if (choice1 == 'Rock' && choice2 == 'Rock') {
     result = 'It\'s a Tie!'
   } else if (choice1 == 'Rock' && choice2 == 'Paper') {
@@ -27,17 +28,16 @@ function checkWinner(choice1, choice2) {
     result = 'Player Wins!'
   } else if (choice1 == 'Scissor' && choice2 == 'Paper') {
     result = 'Computer Wins!'
-  }
+  } else return 'Invalid input'
   return `You chose ${choice2} and the Computer chose ${choice1}, ${result}`
 }
 
 function game() {
   var comp = getComputerChoice()
   var player = getPlayerChoice()
-  alert(checkWinner(comp,player))
-  
+  alert(checkWinner(comp,player))  
 }
 
-while (true) {
+while (true){
   game()
 }
