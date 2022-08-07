@@ -25,16 +25,22 @@ function checkWinner(choice1, choice2) {
       if (choice1 == 'paper'){
         comp++
       } else player++
+      compScore.innerText = `${comp}`
+      playerScore.innerText = `${player}`
       break
     case "paper":
       if (choice1 == 'scissor'){
         comp++
       } else player++
+      compScore.innerText = `${comp}`
+      playerScore.innerText = `${player}`
       break
     case "scissor":
       if (choice1 == 'rock'){
         comp++
       } else player++
+      compScore.innerText = `${comp}`
+      playerScore.innerText = `${player}`
       break
   }
 
@@ -43,19 +49,24 @@ function checkWinner(choice1, choice2) {
 function playRound(playerChoice) {
   var computerSelection = getComputerChoice()
   var playerSelection = playerChoice
-  alert(checkWinner(computerSelection,playerSelection))  
+  checkWinner(computerSelection,playerSelection)
 }
 /**
  * Checks who has a higher score
  * @returns Winner 
  */
 function announceWinner() {
-  if (player > comp) {
-    return 'You Win!'
-  } else return 'Computer Wins!'
+  if(compScore.innerText == 5 || playerScore.innerText == 5){
+    comp = 0
+    player = 0
+    if (player > comp) { alert('You Win!') 
+    } else alert('Computer Wins!')
+  }
 }
-
+const compScore = document.getElementById('compScore')
+const playerScore = document.getElementById('playerScore')
 const buttons = document.querySelectorAll('button')
 buttons.forEach(button => button.addEventListener('click', () =>{
   playRound(button.id)
+  announceWinner()
 }))
