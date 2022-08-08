@@ -6,10 +6,13 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: #7B9C98;
   display: flex;
+  width: auto;
+  height: auto;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(rgba(123, 156, 152, 0.8),rgba(123, 156, 152, 0.8)), url(image/background.jpg);
+  background-size: 100%, 100%;
 }
 
 .header{
@@ -19,7 +22,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #72908D;
+  background-color: #72908dCC;
   font-size: 32px;
   font-weight: 900;
   color: #EAF1F3;
@@ -31,12 +34,12 @@ body{
   margin-bottom: 50px;
 }
 h2.score-info{
-  color: #495755;
+  color: #495755CC;
   font-size: 30px;
   font-weight: 900;
 }
 h3.score-message{
-  color: #495755;
+  color: #495755CC;
   font-size: 25px;
   font-weight: 900  ;
 }
@@ -56,12 +59,12 @@ h3.score-message{
 }
 .sign{
   font-size: 70px;
-  color: #EAF1F3;
+  color: #EAF1F3CC;
   font-weight: bolder;
 }
 .score{
   font-size: 25px;
-  color: #EAF1F3;
+  color: #EAF1F3CC;
   font-weight: bolder;
 }
 
@@ -70,15 +73,15 @@ button{
   width: 200px;
   height: 200px;
   font-size: 50px;
-  background-color: #72908D;
-  border: 5px solid #495755;
+  background-color: #72908DCC;
+  border: 5px solid #495755CC;
   border-radius: 25px;
   margin: 10px;
 }
 
 button:hover{
   transform: translateY(-0.2rem);
-  background-color: #EAF1F3;
+  background-color: #EAF1F3CC;
   cursor: pointer;
   box-shadow: 10px 10px 5px rgb(0 0 0 / 35%);
 }
@@ -89,14 +92,14 @@ button:hover{
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: #495755;
+  color: #495755CC;
   font-size: 24px;
   font-weight: 600;
   padding: 10px;
 }
 
 a{
-  color: #495755;
+  color: #495755CC;
   text-decoration: none;
 }
 
