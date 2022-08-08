@@ -1,4 +1,6 @@
 *{
+  margin: 0;
+  padding: 0;
   transition: 0.2s ease-in-out; 
 }
 
@@ -8,6 +10,19 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header{
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #72908D;
+  font-size: 32px;
+  font-weight: 900;
+  color: #EAF1F3;
 }
 
 #scoreboard{
