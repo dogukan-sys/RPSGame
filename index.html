@@ -13,16 +13,28 @@
 </head>
 <body>
 
+
   <div id="scoreboard">
-    <span id="playerScore">0</span>
-    :
-    <span id="compScore">0</span>
+    <h2 class="score-info">Choose Rock, Paper or Scissor!</h2>
+    <h3 class="score-message">First to score 5 points wins!</h3>
+    <div class="score-container">
+      <div class="score-box">
+        <div class="sign" id="playerSign">?</div>
+        <div class="score" id="playerScore">player: 0</div>
+      </div>
+      <div class="score-box">
+        <div class="sign" id="compSign">?</div>
+        <div class="score" id="compScore">computer: 0</div>
+      </div>
+    </div>
   </div>
+
+
+
   <div id="selections">
     <button type="button" id="rock">✊</button>
     <button type="button" id="paper">✋</button>
     <button type="button" id="scissor">✌</button>
-  </div>
-  
+  </div>  
 </body>
 </html>
