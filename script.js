@@ -129,7 +129,7 @@ function restartGame(){
   comp = "0"
   player = "0"
   winner = ""
-  scoreInfo.textContent = "Choose Rock Paper or Scissor!"
+  scoreInfo.textContent = "Choose Rock, Paper or Scissor!"
   scoreMessage.textContent = "First to score 5 points wins."
   playerSign.textContent = '?'
   commpSign.textContent = '?'
