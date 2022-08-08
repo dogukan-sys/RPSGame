@@ -122,6 +122,10 @@ buttons.forEach(button => button.addEventListener('click', () =>{
   }
   playRound(computerSelection, playerSelection)
   
+  if (isGameOver()){
+    finalModal()
+    return
+  }
 }))
 
 function restartGame(){
