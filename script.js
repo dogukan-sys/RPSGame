@@ -117,10 +117,37 @@ buttons.forEach(button => button.addEventListener('click', () =>{
   const computerSelection = getComputerChoice()
   const playerSelection = button.id
   if (isGameOver()){
+    finalModal()
     return
   }
   playRound(computerSelection, playerSelection)
   
 }))
 
+function restartGame(){
+  modal.style.display = "none"
+  comp = "0"
+  player = "0"
+  winner = ""
+  scoreInfo.textContent = "Choose Rock Paper or Scissor!"
+  scoreMessage.textContent = "First to score 5 points wins."
+  playerSign.textContent = '?'
+  commpSign.textContent = '?'
+  playerScore.textContent = 'Player: 0'
+  compScore.textContent = 'Computer: 0'
+}
 
+function finalModal(){
+  modal.style.display = "block"
+  if (player > comp){
+    para.textContent = "You Won, try again!"
+  } else {
+    para.textContent = "You Lost, try again!"
+  }
+}
+
+const modal = document.querySelector('.modal')
+const close = document.getElementById('modal-button')
+const para = document.getElementById('modal-para')
+
+close.addEventListener('click', restartGame)
