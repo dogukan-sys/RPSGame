@@ -1,2 +1,2 @@
 # RPSGame
-Nature-themed Rock Paper and Scissor Game.\
+Nature-themed Rock Paper and Scissor Game.
